@@ -3,6 +3,7 @@
 	"description": "A bidirectional runtime wikitext parser. Converts back and forth between wikitext and HTML/XML DOM with RDFa.",
 	"version": "1.0.0",
 	"license": "GPL-2.0+",
+	"files": [ "." ],
 	"dependencies": {
 		"babybird": "0.0.1",
 		"core-js": "^2.5.6",
