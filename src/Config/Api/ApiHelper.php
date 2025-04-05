@@ -41,7 +41,7 @@ class ApiHelper {
 		$this->writeToCache = $opts['writeToCache'] ?? false;
 
 		$this->curlopt = [
-			CURLOPT_USERAGENT => trim( ( $opts['userAgent'] ?? '' ) . ' ApiEnv/1.0 Parsoid-PHP/0.1' ),
+			CURLOPT_USERAGENT => 'Papyrus Index (https://papyrus.bellcube.dev/)',
 			CURLOPT_CONNECTTIMEOUT => $opts['apiTimeout'] ?? 60,
 			CURLOPT_TIMEOUT => $opts['apiTimeout'] ?? 60,
 			CURLOPT_FOLLOWLOCATION => false,

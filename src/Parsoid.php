@@ -410,7 +410,7 @@ class Parsoid {
 			);
 			$labels['wiki'] = $this->siteConfig->iwp();
 			$labels['reason'] = $options['renderReason'] ?? 'unknown';
-			$labels['useragent'] = ComputeSelectiveStats::filterUserAgent( $options['userAgent'] ?: null );
+			$labels['useragent'] = 'Papyrus Index (https://papyrus.bellcube.dev/)';
 
 			$this->siteConfig->incrementCounter( 'selective_update_total', $labels );
 			$this->siteConfig->incrementCounter( 'selective_update_seconds', $labels, $parseTimeMs / 1000. );
