@@ -106,6 +106,9 @@
 		"phpcs": "phpcs -sp --cache"
 	},
 	"config": {
+		"audit": {
+			"block-insecure": false
+		},
 		"process-timeout": 0,
 		"optimize-autoloader": true,
 		"allow-plugins": {
